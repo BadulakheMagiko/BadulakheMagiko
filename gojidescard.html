@@ -1,0 +1,233 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> NES Godzilla </title>
+<link rel="shortcut icon" href="Título/Ícono.png" type="image/png">
+</head>
+
+<body background="img/wrongbg.png">
+<p style="background-image: img/wrongbg.png;">
+<center>
+
+<p style="color:ffffff;"><font face="Consolas"><br /> <br /> <br /> <br /> <br /> </p>
+
+<p><table style="background-color:rgba(0, 0, 0, 0);margin-left:10px;border-spacing: 50px 0;">
+<th><font face="Consolas"><img src="img/nesgodzilla/main.png" ></p><a href="nesgojira.html">Wrong Way</a></th>
+<th><font face="Consolas"><img src="img/nesgodzilla/capviejas.png" ></p><a href="gojiviejo.html">Capturas viejas</a></th>
+<th><font face="Copperplate Gothic"><img src="img/nesgodzilla/BOARD.png" ></p><a href="gojiboard.html">THE BOARD</a></th>
+</table></p>
+
+<p style="color:ffffff;"><font face="Consolas">Aquí están ideas y elementos que acabé descartando mientras hacía los capítulos de Wrong Way.</p>
+
+<p><table style="background-color:rgba(0, 0, 0, 0);margin-left:10px;border-spacing: 50px 0;">
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+Para el prólogo y GLACIER no hay nada que haya descartado, ya que el primero fue solo una secuencia sencilla y en GLACIER ya tenía en mente
+ lo que quería hacer hace tiempo.
+
+<br /><br /><br />
+Por otro lado, en KRONE llegué a hacer un par de cambios, primero originalmente tenía en mente que, en el encuentro con el rey negro de 
+BLACK & WHITE, este le lanzara su copa a KING CEASAR y saliera corriendo, para morir poco después. No llegué a hacerlo porque fui capaz 
+de editar su sprite para parecer que estuviera lanzando algo o corriendo; por lo que nunca llegó a ser más que una idea.
+</td></tr>
+<tr><th><img src="img/nesgodzilla/unused/rey.png" ></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+Y por otro está esta primera versión de la última captura del capítulo. No tiene mucho más, la cambié porque esta versión la hice a prisas. 
+<br /><br />Puedes hacer clic para compararla con la versión final.
+</td></tr>
+<tr><th><div id="player">
+    </div><script>
+      class ClickListener {
+        constructor() {
+          this.rootElement = document.querySelector( "#player" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/unused/fin14.png', 'img/nesgodzilla/unused/fin14_1.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+Con NIHON si que puedo decir y mostrar más cosas.
+<br /><br />
+Primero, la idea original que tuve en mente hace años, junto a alguna de otros mundos que acabaré haciendo más adelante. 
+El mundo simplemente sería llamado JAPÓN, tendría un tablero similar a LA TIERRA pero volteado, con los mismos tipos de 
+niveles que NIHON y con GEZORA y un monstruo nuevo como jefes. Este nuevo monstruo sería como un VARAN azul con cola de serpiente 
+en lugar de piernas y con la boca de un pez linterna, también tenía en mente que su pelea sería bajo el agua. 
+<br /><br />
+Ya pasando a cosas descartadas, está esta pantalla del menú, que en vez de mostrar “continuar” la primera opción es “nueva partida”, 
+lo cambié para dar a entender que la partida de Marta es una continuación directa a la de Carl. Como la anterior, haz clic para ver el 
+cambio más transcendental que he llegado a hacer.
+</td></tr>
+<tr><th><div id="player2">
+    </div><script>
+      class ClickListener2 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player2" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/unused/old_inicio.png', 'img/nesgodzilla/unused/1_menufin.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener2()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+En un principio iba a haber una pelea contra el ovni misterioso tras ser dañado, pero lo acabé descartando porque no se me ocurría 
+algo interesante para la pelea.
+<br /><br />
+También la escena de los ovnis de fondo en un principio sería en un nivel de PRADERA, pero lo acabé cambiando a OCÉANO para que 
+tuviera más presencia de fondo. También puedes hacer clic ahí.
+</td></tr>
+<tr><th><div id="player3">
+    </div><script>
+      class ClickListener3 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player3" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/unused/pradera_after2_old.png', 'img/nesgodzilla/unused/50_pradera_after2.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener3()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+Esto no es material descartado, pero me hace gracia así que también lo muestro. He aquí una… plantilla 
+(no sé cómo llamarlo) de cómo quería que se viera el CAÑÓN SATELITAL.
+
+</td></tr>
+<tr><th><font face="Consolas"><img src="img/nesgodzilla/unused/Captura.PNG" ></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+Y ahora, esta es la primera imágen de la cosa que observa a Marta… EL VIGÍA. Originalmente solo eran un par de ojos grandes en 
+la oscuridad, ¿habéis jugado a <a href="https://gamejolt.com/games/ribbitmod/671888">RIBBIT</a>? quería hacer los ojos como el 
+del jefe final. Al final intenté hacer algo más que un par de ojos porque, uno, había gente que le convenció la idea cuando lo 
+mostré por un server de discord, y dos, porque parece formar la silueta de la cabeza de Mickey Mouse. 
+<br /><br />
+Por lo que decidí tirar por un camino más exagerado con la misma idea, al final no quedó tan mal. Por cierto, su “nivel” originalmente 
+se llamaba “JUICIO” (El texto dice: “ENTONCES, DECIDES DEJAR ATRÁS ESTE MUNDO...”).
+
+</td></tr>
+<tr><th><div id="player4">
+    </div><script>
+      class ClickListener4 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player4" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/unused/JUDGEMENT.png', 'img/nesgodzilla/unused/64.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener4()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+Y, para terminar con NIHON, tenemos algo diferente. Veréis, una de las cosas que quería hacer para los nuevos capítulos de Wrong Way 
+es que en cada nuevo mundo hubiera en algún momento un tema compuesto por mi. 
+<br /><br />
+En este caso, el tema iría para el nivel CIUDAD CAPITAL, originalmente tenía en mente intentar hacer un cover sencillo de 8 bits del 
+tema clásico de la peli del 54, pero al ver que no me salía bien, pasé a intentar hacer una versión más dinámica. Llegué a hacer un par 
+de intentos con esta idea en mente, pero no avanzaba de la melodía principal y ningún acompañamiento que hiciera sonaba bien.
+<br /><br />
+Entre que el tema era lo único que me impedía empezar la edición y publicación del capítulo, que estaba cansado de trabajar en Nihon 
+tras 2 o 3 meses irregularmente y que al final CIUDAD CAPITAL apenas aparecía, decidí simplemente utilizar para esa parte una <a href="https://www.youtube.com/watch?v=Z7FrbGrb1Hk&t=0s">versión</a> 
+del tema del 54, como tenía en mente desde un principio.
+<br /><br />
+En fin, aquí está lo mejor que pude sacar de mis intentos (el primero es mi favorito):
+</td></tr>
+<tr><th><audio controls>
+  <source src="snd/goji1_1.mp3" type="audio/mp3">
+</audio></th>
+<tr><th><audio controls>
+  <source src="snd/goji1_2.mp3" type="audio/mp3">
+</audio></th>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+Y, si quieres ver a un alguien a punto de entrar en sus 20 silbando a su móvil un intento de canción por un minuto y pico… pues aquí 
+también lo tienes supongo.
+</td></tr>
+<tr><th><audio controls>
+  <source src="snd/city-level.mp3" type="audio/mp3">
+</audio></th>
+</table></p>
+
+<a href="Principal.html">
+  <img src="img/volver.gif" width="160" height="60" alt="img/puerta2.png" id="imgClickAndChange" onclick="changeImage()">
+</a>
+</center>
+</body>
+</html>

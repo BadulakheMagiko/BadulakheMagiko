@@ -1,0 +1,288 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> NES Godzilla </title>
+<link rel="shortcut icon" href="Título/Ícono.png" type="image/png">
+</head>
+
+<body background="img/wrongbg.png">
+<p style="background-image: img/wrongbg.png;">
+<center>
+
+<p style="color:ffffff;"><font face="Consolas"><br /> <br /> <br /> <br /> <br /> </p>
+
+<p><table style="background-color:rgba(0, 0, 0, 0);margin-left:10px;border-spacing: 50px 0;">
+<th><font face="Consolas"><img src="img/nesgodzilla/cosasdesc.png" ></p><a href="gojidescard.html">Cosas Descartadas</a> </th>
+<th><font face="Consolas"><img src="img/nesgodzilla/main.png" ></p><a href="nesgojira.html">Wrong Way</a></th>
+<th><font face="Copperplate Gothic"><img src="img/nesgodzilla/BOARD.png" ></p><a href="gojiboard.html">THE BOARD</a></th>
+</table></p>
+
+<p style="color:ffffff;"><font face="Consolas">
+Aquí están un puñado de capturas para una fanpasta que quise hacer antes de wrong way, a mediados de 2019.</p>
+
+<p style="color:ffffff;"><font face="Consolas">
+<br />O bueno, primero tenemos esta narración en loquendo de ese año llamada "una partida más". 
+<br />(Si os soy sincero, no recordaba haber escrito esto.)</p>
+
+<p><audio autoplay controls>
+  <source src="img/nesgodzilla/otramas/lel.mp3" type="audio/mp3">
+</audio></p>
+
+<p><table style="background-color:rgba(0, 0, 0, 0);margin-left:10px;border-spacing: 50px 0;">
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+La mejor forma de presentar las capturas supongo que sería en orden. El mundo se llamaba "COMIENZO"...
+Si, lo sé, super original. A parte de GODZILLA y MOTHRA, GEZORA también sería jugable, aunque solo por un rato.
+</td></tr>
+<tr><td><font face="Consolas"><img src="img/nesgodzilla/otramas/comienzo1.png" ></td>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br />El tipo de nivel que está por casi todo el tablero se llama "PRIMARIO". Al entrar en uno o te lleva a una 
+pantalla del juego original
+</td></tr>
+<tr><th><font face="Consolas"><img src="img/nesgodzilla/otramas/primario 1.png" ></th>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br />O un nivel completamente vacío.
+</td></tr>
+<tr><th><font face="Consolas"><img src="img/nesgodzilla/otramas/primario 2.png" ></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+No había mucho enfoque en los niveles, mi prioridad en ese momento eran las peleas de jefes, quería muuuuuuchas peleas. 
+También os habréis dado cuenta de que los sprites de GODZILLA y MOTHRA no son los originales, estas versiones fueron 
+hechas por <a href="https://www.deviantart.com/zillagamer">Zillagamer</a>, junto a los sprites de Gezora que veremos ahora.
+</td></tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br />Hablando de jefes, aquí está la pelea de GEZORA contra ANGUIRUS. ¡Haz clic para cambiar de imágen!
+</td></tr>
+<tr><th><div id="player">
+    </div><script>
+      class ClickListener {
+        constructor() {
+          this.rootElement = document.querySelector( "#player" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/otramas/Gezora VS. Anguirus 1.png', 'img/nesgodzilla/otramas/Gezora VS. Anguirus 2.png', 'img/nesgodzilla/otramas/Gezora VS. Anguirus 3.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener()
+    </script></th></tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+Supongo que GEZORA nunca podría dejar de estar relaccionado a glitches.
+</td></tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br />Tras eso, ambos se quedan paralizados, terminando así la aparición estelar de GEZORA.
+</td></tr>
+<tr><th><font face="Consolas"><img src="img/nesgodzilla/otramas/Comienzo2.png" ></th>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br />Ahora toca GODZILLA contra... ¿AQUARIOUS? Es un OC de <a href="https://www.deviantart.com/creaturesofzenith/art/Aquarious-Sprites-542427412">HardCoreCrocomire y WeegeeDude</a>,
+lo encontré en su momento mientras buscaba sprites y me gustó. ¡Haz clic para cambiar de imágen!
+</td></tr>
+<tr><th><div id="player2">
+    </div><script>
+      class ClickListener2 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player2" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/otramas/Godzilla VS. Aquarious 1.png', 'img/nesgodzilla/otramas/Godzilla VS. Aquarious 2.png', 'img/nesgodzilla/otramas/Godzilla VS. Aquarious 3.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener2()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br />Y, para terminar con las peleas de Kaijus normales… ¡MOTHRA CONTRA KUMONGA! Recuerdo perfectamente cómo 
+empecé a perder el interés con esta pelea.¡Haz clic para cambiar de imágen!
+</td></tr>
+<tr><th><div id="player3">
+    </div><script>
+      class ClickListener3 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player3" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/otramas/Mothra Vs. Kumonga 1.png', 'img/nesgodzilla/otramas/Mothra Vs. Kumonga 2.png', 'img/nesgodzilla/otramas/Mothra Vs. Kumonga 3.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener3()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br />Pasando a algo más interesante; ¡Aquí está el segundo tipo de nivel! Esto es de lo que más me ha acabado gustando 
+de estas capturas viejas, nada especialmente único, pero me gusta el resultado. Me basé en el nivel bugeado de la <a href="http://allone-works.com/ngc/wp-content/uploads/2016/05/33972213.png">
+Tierra en Replay.</a><br /><br /> El feto volador de la 3ª captura era un minijefe que representaba uno de los “núcleos” del cartucho. 
+Una idea que tuve para la historia era que el/la protagonista fuera avanzando por el juego destruyendo estos “núcleos”, 
+que eran como elementos esenciales para el funcionamiento del cartucho, terminando la historia con el cartucho 
+completamente roto. ¡Haz clic para cambiar de imágen!
+</td></tr>
+<tr><th><div id="player4">
+    </div><script>
+      class ClickListener4 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player4" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/otramas/Glitch 1.png', 'img/nesgodzilla/otramas/Glitch 2.png', 'img/nesgodzilla/otramas/Glitch 3.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener4()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br />Aquí está la última versión del tablero que llegué a hacer, aquí también habría una pelea contra LETHAR 
+y una contra ZILLA y VARAN a la vez (no recuerdo si era 1 vs 2 o 2 vs 2). Ah y si os preguntáis qué es esa base 
+de colores invertidos… Nunca pensé que sería, solo tenía en mente que se volvería accesible al derrotar a todos los jefes.
+</td></tr>
+<tr><th><font face="Consolas"><img src="img/nesgodzilla/otramas/Comienzo3.png" ></th>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br />Nunca llegué a hacer la pelea de VARAN y ZILLA, ¡pero si una de LETHAR! (contra SOLOMON por ninguna razón, seguramente
+ se me hubiera ocurrido algo para hilar todo.)
+<br /><br />
+Lo importante aquí es que, aparte de ser estas las primerísimas capturas que llegué a hacer, es que acabé utilizando la idea 
+del final de esta batalla para Wrong Way, simplemente me parecía una buena idea a reutilizar. ¡Haz clic para cambiar de imágen!
+</td></tr>
+<tr><th><div id="player5">
+    </div><script>
+      class ClickListener5 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player5" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/otramas/Solomon VS Lethar 1.png', 
+		  'img/nesgodzilla/otramas/Solomon VS Lethar 2.png', 'img/nesgodzilla/otramas/Solomon VS Lethar 3.png', 'img/nesgodzilla/otramas/Solomon VS Lethar 4.png',
+		   'img/nesgodzilla/otramas/Solomon VS Lethar 5.png', 'img/nesgodzilla/otramas/Solomon VS Lethar 6.png', 'img/nesgodzilla/otramas/Solomon VS Lethar 7.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener5()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br />Bueno, para acabar, está esta captura que tengo claro el recuerdo que la hice con MS Paint por alguna razón 
+(el resto de estas y de las capturas que he hecho en Wrong Way las he hecho en Paint.net). Fue de las últimas que hice, 
+junto a las del nivel Glitch, no tenía una idea de antemano, solo me puse a editar la captura de pantalla de la 
+<a href="https://allone-works.com/ngc/wp-content/uploads/2015/06/titanfight.png">pelea contra TITANOSAURUS de la creepy original. 
+</a><br /><br /> 
+No hay contexto que valga aquí, más allá de un godzilla re turbio, 
+luego me vino la idea de una historia en la que el/la jugador/a hiciera a Godzilla más poderoso tras pasar cada mundo, 
+hasta que este atacará al jugador de alguna forma; lo sé, cliché, aunque podría haber funcionado al mezclarlo con la idea 
+de los “núcleos”, dando una sensación de urgencia para destruir el juego antes de que el juego te destruya a tí. 
+<span style="color:000000;">¡Haz clic para cambiar de imágen!</span>
+</td></tr>
+<tr><th><div id="player6">
+    </div><script>
+      class ClickListener6 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player6" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 
+		  'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/longlivetheking.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png', 'img/nesgodzilla/otramas/Titanfight-1.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener6()
+    </script></th>
+</table></p>
+
+<a href="Principal.html">
+  <img src="img/volver.gif" width="160" height="60" alt="img/puerta2.png" id="imgClickAndChange" onclick="changeImage()">
+</a>
+</center>
+</body>
+</html>

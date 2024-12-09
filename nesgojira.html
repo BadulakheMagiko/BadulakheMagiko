@@ -1,0 +1,140 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> NES Godzilla </title>
+<link rel="shortcut icon" href="Título/Ícono.png" type="image/png">
+</head>
+
+<body background="img/wrongbg.png">
+<p style="background-image: img/wrongbg.png;">
+<center>
+<audio id="punch">
+      <source src="snd/punch.wav" type="audio/mpeg">
+    </audio>
+ <div id="player">
+    </div>
+
+    <script>
+	let snd = document.getElementById("punch");
+      class ClickListener {
+        constructor() {
+          this.rootElement = document.querySelector( "#player" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/goji_title.png', 'img/goji_title1.png', 'img/goji_title2.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {
+		  snd.play();
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener()
+    </script>
+
+<p style="color:ffffff;"><font face="Consolas">↑¡Haz clic!↑</p>
+<p style="color:ffffff;"><font face="Consolas">Aquí está todo lo que he hecho relaccionado a la 
+<a href="http://laredsubterranea.blogspot.com/2015/07/traduccion-nes-godzilla-creepypasta.html">creepypasta de Godzilla Monster of Monsters</a> (NGC), hecha por CosbyDaf.</p>
+
+<p><table style="background-color:rgba(0, 0, 0, 0);margin-left:10px;border-spacing: 50px 0;">
+<th><font face="Consolas"><img src="img/nesgodzilla/cosasdesc.png" ></p><a href="gojidescard.html">Cosas Descartadas</a> </th>
+<th><font face="Consolas"><img src="img/nesgodzilla/capviejas.png" ></p><a href="gojiviejo.html">Capturas viejas</a></th>
+<th><font face="Copperplate Gothic"><img src="img/nesgodzilla/BOARD.png" ></p><a href="gojiboard.html">THE BOARD</a></th>
+</table></p>
+
+<p style="color:ffffff;"><font face="Consolas">
+Lo principal aquí es NES Godzilla: Wrong Way, mi propia "fanpasta" que empezó siendo un what-if<br /> 
+de <a href="https://allone-works.com/ngc/index.php/2016/05/03/prologue/">Godzilla Replay</a> 
+(secuela de la historia orignial), y que ahora se esta volviendo algo más propio.</p>
+
+
+<p><table border="4" style="background-color:rgba(0, 0, 0, 0);" >
+<tr>
+<th><font face="Consolas" style="color:ffffff;">Vídeo</a></th>
+<th><font face="Consolas" style="color:ffffff;">Comentarios</a></th>
+</tr>
+<tr>
+<td><iframe width="420" height="315" src="https://www.youtube.com/embed/PesPCciD6qw"></iframe></td> 
+<td width="710" ><font face="Consolas" style="color:ffffff;">
+No tengo mucho que decir del prólogo, solo lo hice para dar un poco de contexto antes de GLACIER. 
+La voz del principio no es, Marta. Simplemente usé en ambas la misma voz del loquendo porque pienso que queda bien.</td>
+</tr>
+<tr>
+<td><iframe width="420" height="315" src="https://www.youtube.com/embed/7of8QYPEthw"></iframe></td>
+<td><font face="Consolas" style="color:ffffff;">
+Como mencioné en la descripción del vídeo original, la primera mitad de GLACIER, hasta la pelea de TEXTALAD si no recuerdo 
+mal, se remonta a 2019. En ese momento compartí varias versiones viejas de capturas por el server de discord de NGC, hasta
+ que, de un día para otro, fuí echado de este sin aviso alguno. Esto me desmotivó bastante, ya que ese era el único sitio 
+ en el que compartía el proyecto, por lo que lo dejé cogiendo polvo en mi carpeta de proyectos durante años. Entre esto y 
+ que no había noticias de nuevos proyectos en el horizonte, hizo que me distanciara del tema en general.<br /><br /> 
+
+Mi interés volvió con la salida de la <a href="https://allone-works.com/ngc/index.php/2023/03/27/chapter-6-alkali-part-1/"> primera parte 
+del capítulo 6 de replay</a>, y con eso, mi interés con el tema. Tras darle varias vueltas a ideas, y después de subir el video 
+de la teoría de los jefes de replay, decidí revivir Wrong Way, en un principio solo completando el primer capítulo. Sobre la 
+segunda mitad, quitando el templo del silencio y las peleas de DOGORA y LETHAR, no sabía muy bien que hacer, por lo que hice 
+el cambio de ambiente a los 2 niveles restantes. En un principio pensé en hacer que DESOLATE AREA solo fuera la parte de las 
+<a href="http://allone-works.com/ngc/wp-content/uploads/2016/05/zone4.png">serpientes del fondo</a>, lo que acabé utilizando para 
+KRONE con unos retoques.</td>
+</tr>
+<tr>
+<td><iframe width="420" height="315" src="https://www.youtube.com/embed/Xnki1IEed-Y"></iframe></td>
+<td><font face="Consolas" style="color:ffffff;">
+KRONE es una transición. Todo lo que tiene este capítulo es lo que tenía en mente a futuro para esta historia como un what-if 
+(salvo una cosa que seguramente aparecerá más adelante). Tras GLACIER estaba dividido en como continuar esto, por un lado quería 
+hacer algo más… propio, hecho desde cero con el puñado de ideas para mundos que tenía en mi cabeza desde hace años y apuntados por 
+ahí, pero tampoco quería dejar a GLACIER como un “one-shot”, ya que también quería jugar más con la idea del what if.
+Por lo que decidí hacer las 2 técnicamente, siendo este capítulo el final de la partida de Carl, tras 
+lo cual podría volver a empezar con Marta. Esto no quiere decir que estos dos capítulos no aporten nada a futuro, elementos de 
+estos aparecerán tarde o temprano como REDHORN, pero no de forma convencional. </td>
+</tr>
+<tr>
+<td><iframe width="420" height="315" src="https://www.youtube.com/embed/EuJVVMJP-Ts"></iframe></td>
+<td><font face="Consolas" style="color:ffffff;">
+Otra razón para el cambio de rumbo de Wrong Way era el poder escribir un personaje completamente nuevo. Una de las cosas que más 
+me rallaba a la hora de escribir los 2 primeros capítulos era intentar mantener el personaje de Carl. Y aunque eso me lo haya quitado
+ de encima, ahora tendré el reto de hacer que se note que Marta es alguien diferente, más allá de ser hispanohablante.</td>
+</tr>
+<tr>
+<td><img src="drNkPIVLnBY" ></iframe></td>
+<td>
+Estoy tentado en hacer esto más accesible, al final del día es un elemento de la historia importante y la primera señal de que hay 
+algo raro con Marta. Pero por otro lado, el hacer esto público directamente mataría el gimmick de este y el otro vídeo... ¿De qué hablo? 
+Abre la imágen a la izquierda.</td>
+</tr>
+<tr>
+<td><iframe width="420" height="315" src="https://www.youtube.com/embed/nb9felMgoo8"></iframe></td>
+<td><font face="Consolas" style="color:ffffff;">
+Quería que NIHON fuera un mundo bastante genérico, pero con detalles chulos que lo hiciera memorable. Todo en este mundo lo pensé 
+para ser algo sencillo en lo que pudiera empezar, ya que este es el salto de editar sprites y capturas a hacerlos yo mismo. Tampoco 
+hay muchas cosas que haya hecho yo por completo siendo honestos, y abusé mucho del uso de imágenes comprimidas para los fondos pero 
+bueno, por algo se empieza. Por otro lado, me sorprende lo mucho que me terminó costando sacar el capítulo, a parte de algunas cosas 
+descartadas, una de las partes que más me costó terminar fue el CAÑÓN SATELITAL, sobre todo la antena. Tenía miedo que a la gente no 
+le gustara el cambio de rumbo en la historia, así que me alegra la buena recepción del capítulo.
+</td>
+</tr>
+<tr>
+<td><img src="img/nesgodzilla/ese_es_carlosII.png" ></td>
+<td><font face="Consolas" style="color:ffffff;">¿Ese es... Carlos II, el Hechizado?</td>
+</tr>
+</table></p>
+
+<a href="Principal.html">
+  <img src="img/volver.gif" width="160" height="60" alt="img/puerta2.png" id="imgClickAndChange" onclick="changeImage()">
+</a>
+</center>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> NES Godzilla </title>
+<link rel="shortcut icon" href="Título/Ícono.png" type="image/png">
+</head>
+
+<body background="img/wrongbg.png">
+<p style="background-image: img/wrongbg.png;">
+<center>
+<audio id="punch">
+      <source src="snd/punch.wav" type="audio/mpeg">
+    </audio>
+ <div id="player">
+    </div>
+
+    <script>
+	let snd = document.getElementById("punch");
+      class ClickListener {
+        constructor() {
+          this.rootElement = document.querySelector( "#player" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/goji_title.png', 'img/goji_title1.png', 'img/goji_title2.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {
+		  snd.play();
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener()
+    </script>
+
+<p style="color:ffffff;"><font face="Consolas">↑Click there!↑</p>
+<p style="color:ffffff;"><font face="Consolas">Here's everything I've done related to the 
+<a href="http://laredsubterranea.blogspot.com/2015/07/traduccion-nes-godzilla-creepypasta.html">Godzilla Monster of Monsters creepypasta</a> (NGC), made by CosbyDaf.</p>
+
+<p><table style="background-color:rgba(0, 0, 0, 0);margin-left:10px;border-spacing: 50px 0;">
+<th><font face="Consolas"><img src="img/nesgodzilla/cosasdesc.png" ></p><a href="gojidescard_eng.html">Discarded stuff</a> </th>
+<th><font face="Consolas"><img src="img/nesgodzilla/capviejas.png" ></p><a href="gojiviejo_eng.html">Old Screenshots</a></th>
+<th><font face="Copperplate Gothic"><img src="img/nesgodzilla/BOARD.png" ></p><a href="gojiboard_eng.html">THE BOARD</a></th>
+</table></p>
+
+<p style="color:ffffff;"><font face="Consolas">
+The main thing here is NES Godzilla: Wrong Way, my own “fanpasta” that started out as a <br /> 
+<a href="https://allone-works.com/ngc/index.php/2016/05/03/prologue/">Godzilla Replay</a> what-if
+ (sequel to the orignial story), and is now becoming more of its own.</p>
+
+
+<p><table border="4" style="background-color:rgba(0, 0, 0, 0);" >
+<tr>
+<th><font face="Consolas" style="color:ffffff;">Video</a></th>
+<th><font face="Consolas" style="color:ffffff;">Coments</a></th>
+</tr>
+<tr>
+<td><iframe width="420" height="315" src="https://www.youtube.com/embed/PesPCciD6qw"></iframe></td> 
+<td width="710" ><font face="Consolas" style="color:ffffff;">
+I don't have much to say about the prologue, I just did it to give some context before GLACIER.</td></tr>
+<tr>
+<td><iframe width="420" height="315" src="https://www.youtube.com/embed/7of8QYPEthw"></iframe></td>
+<td><font face="Consolas" style="color:ffffff;">
+As I mentioned in the description of the original video, the first half of GLACIER, up to the TEXTALAD fight if I remember correctly, dates back to 2019.At that time I shared several old versions of screenshots over the NGC discord server, until, overnight, I was kicked off of it without any warning. This discouraged me a lot, since that was the only place where I shared the project, so I left it gathering dust in my project folder for years. Between this and the fact that there was no news of new projects on the horizon, it made me distance myself from the topic in general.
+<br /><br /> 
+
+My interest returned with the release of the <a href="https://allone-works.com/ngc/index.php/2023/03/27/chapter-6-alkali-part-1/">first part 
+of chapter 6 of replay</a>, and with that, my interest in the subject. After thinking about several ideas, and after uploading the video of the replay bosses theory,
+ I decided to revive Wrong Way, at first only completing the first chapter. About the second half, removing the temple of silence and the 
+DOGORA and LETHAR fights, I didn't know very well what to do, so I made the swap of environment to the remaining 2 levels. At the beginning 
+I thought of making DESOLATE AREA only the part of the 
+<a href="http://allone-works.com/ngc/wp-content/uploads/2016/05/zone4.png">snakes in the background</a>, which I ended up using for 
+KRONE with a few tweaks.</td>
+</tr>
+<tr>
+<td><iframe width="420" height="315" src="https://www.youtube.com/embed/Xnki1IEed-Y"></iframe></td>
+<td><font face="Consolas" style="color:ffffff;">
+KRONE is a transition. Everything in this chapter is what I had in mind for the future of this story as a what-if (except for one 
+thing that will surely appear later). After GLACIER I was divided on how to continue this, on one hand I wanted to do something more... 
+my own, made from scratch with the handful of ideas for worlds I had in my head for years and jotted down, but I also didn't want to 
+leave GLACIER as a “one-shot”, since I also wanted to play more with the idea of the what if.So I decided to do the 2 technically, this 
+chapter being the end of Carl's game, after which I could start again with Marta. This is not to say that these two chapters don't 
+contribute anything going forward, elements of these will appear sooner or later as REDHORN, but not in a conventional way.
+</td>
+</tr>
+<tr>
+<td><iframe width="420" height="315" src="https://www.youtube.com/embed/EuJVVMJP-Ts"></iframe></td>
+<td><font face="Consolas" style="color:ffffff;">
+Another reason for the Wrong Way turnaround was to be able to write a completely new character. One of the things that bugged me 
+the most when writing the first 2 chapters was trying to keep Carl's character. And although I've got that out of the way, now I'll 
+have the challenge of making it clear that Marta is someone different, beyond being Spanish-speaking.
+ </td>
+</tr>
+<tr>
+<td><img src="7xGlICWhA3w" ></iframe></td>
+<td>
+I'm tempted to make this more accessible, at the end of the day it's an important story element and the first sign that there's 
+something off with Marta. But on the other hand, making this public would directly kill the gimmick of this and the other video... 
+What am I talking about? Open the image on the left.
+</td>
+</tr>
+<tr>
+<td><iframe width="420" height="315" src="https://www.youtube.com/embed/nb9felMgoo8"></iframe></td>
+<td><font face="Consolas" style="color:ffffff;">
+I wanted NIHON to be a fairly generic world, but with cool details that would make it memorable. Everything in this world I thought 
+was meant to be something simple that I could start on, as this is the leap from editing sprites and screenshots to making them myself. 
+There aren't many things I did completely myself either to be honest, and I overused a lot of compressed images for the backgrounds but 
+hey, it's a place to start. On the other hand, I'm surprised how much it ended up taking a lot of time to get the chapter out, apart 
+from some discarded things, one of the parts that cost me the most to finish was the SATELLITE CANNON, especially the antenna. I was 
+afraid that people wouldn't like the change of direction in the story, so I'm glad the chapter was well received.
+</td>
+</tr>
+<tr>
+<td><img src="img/nesgodzilla/ese_es_carlosII.png" ></td>
+<td><font face="Consolas" style="color:ffffff;">Is that... Charles II, the Bewitched?</td>
+</tr>
+</table></p>
+
+<a href="Principal_eng.html">
+  <img src="img/goback.gif" width="160" height="60" alt="img/puerta2.png" id="imgClickAndChange" onclick="changeImage()">
+</a>
+</center>
+</body>
+</html>

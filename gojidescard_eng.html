@@ -1,0 +1,221 @@
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> NES Godzilla </title>
+<link rel="shortcut icon" href="Título/Ícono.png" type="image/png">
+</head>
+
+<body background="img/wrongbg.png">
+<p style="background-image: img/wrongbg.png;">
+<center>
+
+<p style="color:ffffff;"><font face="Consolas"><br /> <br /> <br /> <br /> <br /> </p>
+
+<p><table style="background-color:rgba(0, 0, 0, 0);margin-left:10px;border-spacing: 50px 0;">
+<th><font face="Consolas"><img src="img/nesgodzilla/main.png" ></p><a href="nesgojira_eng.html">Wrong Way</a></th>
+<th><font face="Consolas"><img src="img/nesgodzilla/capviejas.png" ></p><a href="gojiviejo_eng.html">Old Screenshots</a></th>
+<th><font face="Copperplate Gothic"><img src="img/nesgodzilla/BOARD.png" ></p><a href="gojiboard_eng.html">THE BOARD</a></th>
+</table></p>
+
+<p style="color:ffffff;"><font face="Consolas">Here are ideas and elements that I ended up discarding while making the Wrong Way chapters.</p>
+
+<p><table style="background-color:rgba(0, 0, 0, 0);margin-left:10px;border-spacing: 50px 0;">
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+For the prologue and GLACIER there is nothing I have discarded, since the first one was just a simple sequence and in GLACIER I already 
+had in mind what I wanted to do some time ago.
+<br /><br /><br />
+On the other hand, in KRONE I got to make a couple of changes, first I originally had in mind that, in the encounter with the BLACK & WHITE's
+ black king, he would throw his cup at KING CEASAR and run away, to die shortly after. I never got around to it because I was able to edit
+ his sprite to look like he was throwing something or running; so it never became more than an idea.</td></tr>
+<tr><th><img src="img/nesgodzilla/unused/rey.png" ></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+And on the other side is this first version of the last capture of the chapter. It doesn't have much more, I changed it because I 
+made this version in a hurry. <br /><br />You can click to compare it with the final version.
+</td></tr>
+<tr><th><div id="player">
+    </div><script>
+      class ClickListener {
+        constructor() {
+          this.rootElement = document.querySelector( "#player" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/unused/fin14.png', 'img/nesgodzilla/unused/fin14_1.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+With NIHON I can say and show more stuff.
+<br /><br />
+First, the original idea I had in mind years ago, along with some other worlds that I will end up doing later. The world would simply 
+be called JAPAN, would have a board similar to THE EARTH but flipped, with the same types of levels as NIHON and with GEZORA and a new 
+monster as bosses. This new monster would be like a blue VARAN with a snake tail instead of legs and with the mouth of a lantern fish, 
+I also had in mind that his fight would be underwater. <br /><br />
+Moving on to discarded things, there is this menu screen, that instead of showing “continue” the first option is “new game”, I changed 
+it to imply that Marta's game is a direct continuation of Carl's game. Like the previous one, click to see the most transcendental change
+ I have come to make.</td></tr>
+<tr><th><div id="player2">
+    </div><script>
+      class ClickListener2 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player2" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/unused/old_inicio.png', 'img/nesgodzilla/unused/1_menufin.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener2()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+At first there was going to be a fight against the mysterious UFO after being damaged, but I ended up discarding it because I 
+couldn't think of anything interesting for the fight.<br /><br />
+Also the UFO scene in the background was originally going to be in a PRADERA level, but I ended up changing it to OCEANO so 
+that it would have more background presence. You can also click there.</td></tr>
+<tr><th><div id="player3">
+    </div><script>
+      class ClickListener3 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player3" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/unused/pradera_after2_old.png', 'img/nesgodzilla/unused/50_pradera_after2.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener3()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+This is not discarded material, but it amuses me so I'm showing it too. Here is a... template (I don't know what to call it) 
+of what I wanted the SATELLITE CANYON to look like.
+</td></tr>
+<tr><th><font face="Consolas"><img src="img/nesgodzilla/unused/Captura.PNG" ></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+And now, this is the first image of the thing watching Marta... THE LOOKOUT. Originally it was just a pair of big eyes in 
+the dark, have you played <a href="https://gamejolt.com/games/ribbitmod/671888">RIBBIT</a>? I wanted to make the eyes like the final boss. In the end I tried to make something more than 
+a pair of eyes because, one, there were people who were convinced by the idea when I showed it on a discord server, and two, 
+because it seems to form the silhouette of Mickey Mouse's head. 
+<br /><br />
+So I decided to go down a more exaggerated path with the same idea, in the end it didn't turn out so bad. By the way, its 
+“level” was originally called “JUDEMENT”.
+</td></tr>
+<tr><th><div id="player4">
+    </div><script>
+      class ClickListener4 {
+        constructor() {
+          this.rootElement = document.querySelector( "#player4" );
+          this.element = document.createElement("img");
+          this.rootElement.appendChild(this.element);
+          this.images = ['img/nesgodzilla/unused/JUDGEMENT.png', 'img/nesgodzilla/unused/64.png']
+          this.idx = 0
+          this.init()
+        }
+
+        init() {
+          this.element.src = this.images[this.idx]
+          this.element.onclick = this.nextImage.bind(this)
+        }
+
+        nextImage() {;
+          this.idx++;
+          if(this.idx >= this.images.length) {
+            this.idx = 0;
+          }
+          this.element.src = this.images[this.idx]
+        }
+
+      }
+      new ClickListener4()
+    </script></th>
+</tr>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+And, to finish with NIHON, we have something different. You see, one of the things I wanted to do for the new chapters of Wrong Way is that in each new world there would be at some point a track composed by me. 
+<br /><br />
+In this case, the theme would go to the CAPITAL CITY level, originally I had in mind to try to make a simple 8-bit cover of the classic theme of the 54 movie, but when I saw that it didn't work out well, I tried to make a more dynamic version. I made a couple of attempts with this idea in mind, but it didn't advance from the main melody and no accompaniment I made sounded good.
+<br /><br />
+Between the fact that the track was the only thing that prevented me from starting the editing and publication of the chapter, that I was tired of working in Nihon after 2 or 3 months irregularly and that in the end CAPITAL CITY hardly appeared, I decided to simply use for that part a 
+<a href="https://www.youtube.com/watch?v=Z7FrbGrb1Hk&t=0s">version</a> 
+of the '54 theme, as I had in mind from the beginning.
+<br /><br />
+Anyway, here's the best I could come up with from my attempts (the first one is my favorite):
+</td></tr>
+<tr><th><audio controls>
+  <source src="snd/goji1_1.mp3" type="audio/mp3">
+</audio></th>
+<tr><th><audio controls>
+  <source src="snd/goji1_2.mp3" type="audio/mp3">
+</audio></th>
+<tr> <td width="710" ><font face="Consolas" style="color:ffffff;">
+<br /><br />
+And, if you want to see someone about to enter their 20's whistling into their cell phone an attempt at a song for a minute and a
+ bit... well, here you have that too I guess.</td></tr>
+<tr><th><audio controls>
+  <source src="snd/city-level.mp3" type="audio/mp3">
+</audio></th>
+</table></p>
+
+<a href="Principal_eng.html">
+  <img src="img/goback.gif" width="160" height="60" alt="img/puerta2.png" id="imgClickAndChange" onclick="changeImage()">
+</a>
+</center>
+</body>
+</html>
